@@ -1,0 +1,40 @@
+div.transactions {
+  margin-top: 1rem;
+}
+
+div.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+
+div.transaction:first-child {
+  border-top: 0;
+}
+
+div.transaction div.name {
+  font-size: 1.2rem;
+}
+
+div.transaction div.description {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+div.right {
+  text-align: right;
+}
+
+div.price.green {
+  color: #1c1;
+}
+
+div.price.red {
+  color: #c11;
+}
+
+div.transaction div.datetime {
+  font-size: 0.7rem;
+  color: #888;
+}
