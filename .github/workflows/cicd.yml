@@ -27,9 +27,9 @@ jobs:
     steps:
       - name: Pull image from docker hub
         run: docker pull ${{ secrets.DOCKER_USERNAME }}/expense-tracker-client:0.0.1.RELEASE
-      #   - name: Stop old container
-      #     run: docker stop client
-      #   - name: Remove old container
-      #     run: docker rm client
+      - name: Stop old container
+        run: docker stop client
+      - name: Remove old container
+        run: docker rm client
       - name: Run docker container
         run: docker run -d -p 4000:80 --name client ${{secrets.DOCKER_USERNAME}}/expense-tracker-client:0.0.1.RELEASE
