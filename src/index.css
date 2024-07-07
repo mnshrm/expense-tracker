@@ -79,3 +79,15 @@ body {
   font-weight: 900;
   font-style: italic;
 }
+
+main {
+  max-width: 360px;
+  margin: 0px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-size: 3rem;
+}
